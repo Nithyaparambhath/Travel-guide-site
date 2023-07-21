@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+
+    <!-- css Link -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2aa4eda69f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand fw-bolder fs-1 text-warning" href="#">Travel <span class="fs-5 text-dark">Guide</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Packages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Transport</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Hotels</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Support</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+
+          <div class="banner-info">
+            <h1 class="fw-bolder  text-light text-center">Travel <br> <span>for Enough</span> <br> You meet <br> <span>yourself</span></h1>
+            
+          </div>
+
+          <div class="enquiry-btn text-center ">
+            <button type="button" class=" banner-btn btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              ENQUIRY
+            </button>
+          </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PLEASE SHARE YOUR DETAILS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                 
+                  <input type="text" placeholder="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+              <div class="mb-3">
+               
+                <input type="email"  placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+              </div>
+              <div class="mb-3">
+                  
+                  <input type="number" placeholder="Number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Your Preference</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    </div>
+                    <div class="mb-3">
+                      
+                      <input type="number" placeholder="Number of Members"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     
+                    </div>
+
+                    <div class="mb-3">
+                      
+                      <textarea class="form-control" placeholder="Message" id="floatingTextarea2Disabled" style="height: 100px" disabled></textarea>
+                     
+                    </div>
+
+                
+              
+                    
+              <button type="submit" class="btn btn-primary text-center">Submit</button>
+            </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+    <section class="card-section">
+        
+            <div class="common-heading mt-5">
+                <h1  class="text-center fs-3">HONEYMOON PACKAGES</h1>
+            </div>
+
+            
+       
+        
+
+        <!-- card -->
+        <div class="container  mt-5 ">
+           <div class="row">
+               <div class="col-lg-3 col-md-6">
+                    <div class="card m-3 p-3" style="width: 18rem;">
+                        <img src="https://th.bing.com/th/id/R.cbfba2cf91a764670f8da98c784f07f4?rik=N7Tz9t5myaSfww&riu=http%3a%2f%2f1.bp.blogspot.com%2f-C5jJvX0VnV4%2fVl2FRVui9_I%2fAAAAAAAABeY%2fDWWBdtCzY_k%2fs640%2fkerala-honeymoon-packages1-800x480.jpg&ehk=Hk0YmTF8CYVF6GTmPS0QTjo6rAIDV%2fcEuttuZR7Qzdc%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="kerala-honymoon">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Kerala Honeymoon Packages
+                            
+                          </h5>
+                          <span class="text-danger">(04 Nights / 05 Days)</span>
+                          <p class="card-text">A Honeymoon to Kerala realfirms your belief in the nation why this incredible place is called one of the paradises on earth and called God's own Country. </p>
+                          <a href="#" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+                      </div>
+               </div>
+    
+                 <dic class="col-lg-3 col-md-6">
+                      <div class="card m-3 p-3" style="width: 18rem;">
+                        <img src="https://th.bing.com/th/id/OIP.ZdTBZeWNgPb_mwgT9waQegHaEj?w=308&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="Maldive-honymoon">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Maldive Honeymoon Packages
+                            
+                          </h5>
+                          <span class="text-danger">(05 Nights / 06 Days)</span>
+                          <p class="card-text">
+                            Arguably one of the most beautiful tropical countries in the world, honeymoon in the Maldives checks every box a beach-loving <couple></couple>.
+                            
+                             </p>
+                          <a href="#" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+                      </div>
+                 </dic>
+    
+                  <div class="col-lg-3 col-md-6">
+                      <div class="card m-3 p-3" style="width: 18rem;">
+                        <img src="https://th.bing.com/th/id/OIP.pty1_MYQGCWMLRdQeSF1IQHaEt?w=282&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="Manali-honymoon">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Manali Honeymoon Packages
+                            
+                          </h5>
+                          <span class="text-danger">(07 Nights / 08 Days)</span>
+                          <p class="card-text">A serene destination crowned by the snow-clad peaks of the Himalayas,lush green hillsides,tall pine trees, pristine lakes and verdant landscapes </p>
+                          <a href="#" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+                      </div>
+                  </div>
+    
+                  <div class="col-lg-3 col-md-6">
+                      <div class="card m-3 p-3" style="width: 18rem;">
+                        <img src="https://th.bing.com/th/id/OIP.mQ_0v9bC5ax3vJE4SiUHSwHaEb?w=262&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="Goa-honymoon">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Goa Honeymoon Packages
+                            
+                          </h5>
+                          <span class="text-danger">(07 Nights / 08 Days)</span>
+                          <p class="card-text">Make the journey to Goa onboard Cordelia Cruses as beautiful as the destination. Premium Cruse with World class amenities. </p>
+                          <a href="#" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+                      </div>
+                  </div>
+           </div>
+
+           <div class="button-pakages text-center mt-4">
+            <button class="btn btn-primary border rounded-5  ">MORE PACKAGES</button>
+        </div>
+
+
+        </div>
+    </section>
+
+    <section class="tours bg-body-tertiary  pt-2 mt-4">
+      <div class="common-heading mt-5 mb-4">
+        <h1  class="text-center fs-3">SPECIAL KERALA FESTIVAL TOURS</h1>
+    </div>
+
+
+     <!-- Carousal slider -->
+
+     <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active " data-bs-interval="1000">
+          <img src="https://th.bing.com/th/id/OIP.XMbfHFybo5lZfTyztsXxVQAAAA?w=296&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="Kadhakali-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bolder fs-1">KADHAKALI</h5>
+            <p>Kathakali is a major form of classical Indian dance.</p>
+            <button class="btn btn-info">More Details</button>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="1000">
+          <img src="https://th.bing.com/th/id/OIP.nAKi0uhztSMFLYBS4CE70QHaDU?w=346&h=157&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="Trissurpooram-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5  class="fw-bolder fs-1" >TRISSUR POORAM</h5>
+            <p>The Thrissur Pooram is an annual Hindu temple festival held in Thrissur</p>
+            <button class="btn btn-info">More Details</button>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="1000">
+          <img src="https://th.bing.com/th/id/OIP.CPbVrf-2jNjwXqsJExa10wHaDi?w=343&h=167&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="Boatrice-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5  class="fw-bolder fs-1" >KEARAL BOAT RACE</h5>
+            <p>Vallam kali also known as Snake Boat Race is a traditional boat race in Kerala</p>
+            <button class="btn btn-info">More Details</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container m-5">
+      <div class="row">
+          <div class="col-md-12 col-lg-6 ">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/R83BlU5nnbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-12 col-lg-6">
+              <div class="row">
+                  <div class="col-sm-4 col-md-4  ml-3">
+                      <img class="img-fluid ml-3"  src="https://th.bing.com/th/id/OIP.xVpYTzXpvhPecxhtnYIqOwHaEq?w=226&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+  
+                      <img  class="img-fluid mt-3"  src="https://th.bing.com/th/id/OIP.zlCaphb4RAM2dEZxyp3VOQAAAA?w=214&h=152&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                      <img  class="img-fluid mt-3"   src="https://th.bing.com/th/id/OIP.NXIBMJVr3cBatLpt6EHB6gAAAA?w=202&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                  </div>
+                  <div class="col-sm-4 col-md-4 ml-3 ">
+                      <img class="img-fluid mt-3" class="img-fluid "  width="200px" src="https://th.bing.com/th/id/OIP.1I7zZn8UPHoVZHdyerDFBwHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                      <img  class="img-fluid ml-3"   src="https://th.bing.com/th/id/OIP.C2Dws2_c91jRxGijnykTUwHaK-?w=115&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+  
+                      
+                  </div>
+                  <div class="col-sm-4 col-md-4   ml-3 ">
+                      <img class="img-fluid mt-3" class="img-fluid "  src="https://th.bing.com/th/id/OIP.oHkFBtpQnngsvbU_QlryiAHaFj?w=211&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+  
+                      <img class="img-fluid mt-3" class="img-fluid "   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kerala_boatrace.jpg/450px-Kerala_boatrace.jpg" alt="">
+  
+                      <img class="img-fluid mt-3" class="img-fluid "   src="https://th.bing.com/th/id/OIP.qzTA4uZzWkUSaqqrNUHK0QHaEa?w=280&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+   </div>
+    </section>
+
+
+   
+    <section class="north-indian-tours">
+        
+            <div class="common-heading mt-5">
+                <h1  class="text-center fs-3">NORTH INDIAN TOURS</h1>
+            </div>
+
+           
+       
+        
+
+        <!-- card -->
+        <div class="container  mt-5 ">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="card card-div m-3 p-3 border rounded-5 " style="width: 15rem;">
+                  <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://explorehorizons.com/wp-content/uploads/2019/08/Varanasi_2.jpg" class="card-img-top" alt="varanasi">
+
+                  <div class="north-indian">
+                   <h1 class="text-light fs-3 fw-1">VARANASI</h1>
+                   <P class="text-light">Rs : <span>12000 /Person</span> </P>
+                   <button class="btn btn-danger border rounded-5">BOOK NOW</button>
+                  </div>
+                
+                </div>
+
+              </div> 
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card card-div m-3 p-3 border rounded-5 " style="width: 15rem;">
+                  <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/OIP.l-6Y1z7WONRgFJVVIYhgjgHaE9?w=240&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="varanasi">
+
+                  <div class="north-indian">
+                   <h1 class="text-light fs-3 fw-1">KASHMIR</h1>
+                   <P class="text-light">Rs : <span>20000 /Person</span> </P>
+                   <button class="btn btn-danger border rounded-5">BOOK NOW</button>
+                  </div>
+                
+                </div>
+
+              </div> 
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card card-div m-3 p-3 border rounded-5 " style="width: 15rem;">
+                  <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/R.94fecfbbea062e2aedfe391bf0dc6eef?rik=PVSlPqToOr178g&pid=ImgRaw&r=0" class="card-img-top" alt="varanasi">
+
+                  <div class="north-indian">
+                   <h1 class="text-light fs-3 fw-1">PUNJAB</h1>
+                   <P class="text-light">Rs : <span>14000 /Person</span> </P>
+                   <button class="btn btn-danger border rounded-5">BOOK NOW</button>
+                  </div>
+                
+                </div>
+
+              </div> 
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card card-div m-3 p-3 border rounded-5 " style="width: 15rem;">
+                  <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/R.b5471475706650e2846641d98828146a?rik=MEukDvL24z5IPQ&riu=http%3a%2f%2ftarget-tours.com%2fheigh_lights%2frajasthan-tour-banner.jpg&ehk=cqS%2blg0rBjP17Yan90Ws4pPrr7Y3yzlSbrHKA%2f8rrbw%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="varanasi">
+
+                  <div class="north-indian">
+                   <h1 class="text-light fs-3 fw-1">RAJASTAN</h1>
+                   <P class="text-light">Rs : <span>18000 /Person</span> </P>
+                   <button class="btn btn-danger border rounded-5">BOOK NOW</button>
+                  </div>
+                
+                </div>
+
+              </div> 
+   
+                
+   
+                 
+          </div>
+
+          <hr>
+          
+
+
+       </div>
+    </section>
+
+
+    <!-- Premium Features -->
+
+    <section class="card-section">
+        
+      <div class="common-heading mt-5">
+          <h1  class="text-center fs-3">OUR PREMIUM FEATURES</h1>
+          <P class="feature-para text-danger fs-5 text-center">We will make your dreams come true</P>
+      </div>
+
+  <!-- card -->
+  <div class="container  mt-5 ">
+     <div class="row">
+         <div class="col-lg-3 col-md-6">
+          <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+                <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/R.1f1254ec10ceea0ca10fc0b08fea3459?rik=bYAWd2oMUwtSDQ&riu=http%3a%2f%2fclipartmag.com%2fimages%2friding-a-bike-clipart-2.jpg&ehk=pTP0FdsV8wJQ31I5ztYN%2bU3vyb8ZPG6tXjIFEsFzxrY%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="varanasi">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">FREE BIKE RIDE
+                      
+                    </h5>
+                    
+                    <a href="#" class="link-btn" >Learn More</a>
+                  </div>
+                </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6">
+          <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+                <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/OIP.0SlbqawZ1V8JRRFfaKrj6gHaHa?pid=ImgDet&rs=1" class="card-img-top" alt="varanasi">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">CAMPFIRE
+                      
+                    </h5>
+                    
+                    <a href="#" class="link-btn" >Learn More</a>
+                  </div>
+                </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6">
+          <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+                <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/OIP.D3CawwLymCZ_CPRllkTTSwAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="varanasi">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">24*7 SUPPORT
+                      
+                    </h5>
+                    
+                    <a href="#" class="link-btn" >Learn More</a>
+                  </div>
+                </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6">
+          <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+                <img class="img-fluid card-div border rounded-5" style="width:200px;height: 200px;" src="https://th.bing.com/th/id/OIP.MqgMpmfLyPJ8ikZFmK7P1gAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="varanasi">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">TOUR GUIDE
+                      
+                    </h5>
+                    
+                    <a href="#" class="link-btn" >Learn More</a>
+                  </div>
+                </div>
+         </div>
+
+           
+
+            
+
+            
+     </div>
+
+    
+
+
+  </div>
+</section>
+
+<section class="bg-body-tertiary pt-2 mt-4">
+  <div class="common-heading mt-5 text-center">
+    <span class="fa fa-envelope text-warning fs-4"></span>
+    <P class="feature-para text-primary fs-4 text-center">Our Customers Love</P>
+</div>
+
+  <!-- card -->
+  <div class="container  mt-3 ">
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+         <div class="card card-div m-3 p-3 border rounded-5  bg-body-tertiary" style="width: 15rem;">
+               <img class="img-fluid card-div " style="width:200px;" src="./images/test1.jpg" class="card-img-top" alt="varanasi">
+                 <div class="card-body text-center">
+<!--                 
+                    <div class="rate d-flex justify-content-between align-items-center"> -->
+                        <div class="ratings  d-flex justify-content-evenly align-items-center mb-3">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star-half-alt rating-color"></i>
+                        </div>
+                        <!-- </div> -->
+                       
+                   
+                   <h5 class="card-title">Machael & Jenny 
+                     
+                   </h5>
+                   
+                   <p>" We created lots of wonderful memories and the trip was so nice "</p>
+                 </div>
+               </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+         <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+               <img class="img-fluid card-div " style="width:200px;" src="./images/test2.jpg" class="card-img-top" alt="varanasi">
+                 <div class="card-body text-center">
+                  <div class="ratings  d-flex justify-content-evenly align-items-center mb-3">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                </div>
+                   <h5 class="card-title">Rohith & Amrutha
+                     
+                   </h5>
+                   
+                   <p>" A truly satisfying experience .Travel Guide have a great coordination "</p>
+                 </div>
+               </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+         <div class="card card-div m-3 p-3 border rounded-5 bg-body-tertiary " style="width: 15rem;">
+               <img class="img-fluid card-div " style="width:200px;" src="./images/test3.jpg" class="card-img-top" alt="varanasi">
+                 <div class="card-body text-center">
+                  <div class="ratings  d-flex justify-content-evenly align-items-center mb-3">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star-half-alt rating-color"></i>
+                </div>
+                   <h5 class="card-title">James & Anna
+                     
+                   </h5>
+                   
+                  <p>" THey have reallygood packages at reasonable rates "</p>
+                 </div>
+               </div>
+        </div>
+
+       
+
+          
+
+           
+
+           
+    </div>
+
+   
+
+
+ </div>
+
+
+
+</section>
+
+<!-- Footer -->
+<footer class="footer p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-item">
+          <h1 class="fs-5 text-warning">ABOUT US</h1>
+          <ul>
+            <li class="link"><a class="link-a" href=""> Our Company</a></li>
+            <li class="link"><a class="link-a" href="">Our Management</a></li>
+            <li class="link"><a class="link-a" href="">Connections</a></li>
+            <li class="link"><a class="link-a" href="">Annual Reports</a></li>
+            <li class="link"><a class="link-a" href="">Our Networks</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 footer-item">
+          <h1 class="fs-5 text-warning">SOCIAL MEDIA</h1>
+          <div class="d-flex social-media mt-4">
+            <p><a href="#"><span class="fa fa-facebook fs-4 pe-3 text-light"></span></a></p>
+            <p><a href="#"><span class="fa fa-instagram fs-4 pe-3 text-light"></span></a></p>
+            <p><a href="#"><span class="fa fa-twitter fs-4 pe-3 text-light"></span></a></p>
+            <p><a href="#"><span class="fa fa-whatsapp fs-4 pe-3 text-light"></span></a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4 footer-item">
+          <img class="img-fluid" src="./images/foot.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div class="copyright mt-3">
+        <p class="text-light text-center fs-6">&copy; 2023 Travel Guide | Designed & Developed by Nithya P.</p>
+      </div>
+    </div>
+</footer>
+   
+ 
+ 
+    
+
+
+<!-- BOotstrap CDN Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
